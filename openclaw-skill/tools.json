@@ -1,0 +1,52 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "refine_student_profile",
+      "description": "Updates the student's college profile JSON with new information (like new SAT scores, budget changes, or target country changes). Call this whenever the student mentions a change in their background, preferences, or academic standing.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "natural_language_update": {
+            "type": "string",
+            "description": "The exact natural language update from the student (e.g. 'I got a 1520 on my SAT and want to add Cornell to my list.')"
+          }
+        },
+        "required": ["natural_language_update"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "run_college_discovery",
+      "description": "Re-scores the college catalog against the student's current profile to generate a new list of target colleges. Call this AFTER the student's profile has been updated to see if their target list changes.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "run_college_crawler",
+      "description": "Executes the Playwright web crawler to download the latest admissions, financial aid, and policy pages from the student's target colleges. Call this AFTER discovery to fetch ground-truth data.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "generate_college_strategy_dashboard",
+      "description": "Runs the LLM extraction and synthesis layers to generate a final strategic recommendation report, then compiles it into a beautiful HTML dashboard. Call this as the final step of the pipeline.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+]

@@ -1,0 +1,22 @@
+# Ignore downloaded crawl data and extracted facts
+data/crawl_output/*
+data/college_facts/*
+!data/**/.gitkeep
+
+# Ignore personal student profiles
+data/student_profiles/*
+
+# Ignore personal generated reports, actions, and the UI dashboard
+output/reports/*
+output/actions/*
+output/viewer.html
+!output/**/.gitkeep
+
+# Ignore python cache
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore personal config files (so your target list isn't public)
+config/colleges.json
+config/settings.json

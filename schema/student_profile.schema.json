@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "student_profile.schema.json",
+  "title": "StudentProfile",
+  "description": "Normalized student intake profile used for college discovery and scoring",
+  "type": "object",
+  "required": ["student_id", "profile_version", "created_at", "academic", "geography", "financial", "activities", "application_strategy"],
+  "properties": {
+    "student_id": { "type": "string", "description": "Unique identifier (e.g. uuid or initials+year)" },
+    "profile_version": { "type": "string", "default": "1.0" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "academic": {
+      "type": "object",
+      "required": ["curriculum", "intended_majors"],
+      "properties": {
+        "curriculum": { "type": "string", "enum": ["IB", "A-levels", "AP", "Hong Kong DSE", "GCE", "other"] },
+        "predicted_total": { "type": ["number", "null"], "description": "Predicted/actual total score" },
+        "subject_strengths": { "type": "array", "items": { "type": "string" } },
+        "intended_majors": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "alternate_majors": { "type": "array", "items": { "type": "string" } },
+        "testing": {
+          "type": "object",
+          "properties": {
+            "sat_score": { "type": ["number", "null"] },
+            "act_score": { "type": ["number", "null"] },
+            "sat_taken": { "type": "boolean", "default": false },
+            "act_taken": { "type": "boolean", "default": false },
+            "ielts_toefl_needed": { "type": "boolean", "default": false }
+          }
+        },
+        "selectivity_preference": {
+          "type": "string",
+          "enum": ["ambitious", "mixed", "conservative"],
+          "default": "mixed"
+        }
+      }
+    },
+    "geography": {
+      "type": "object",
+      "required": ["allowed_countries"],
+      "properties": {
+        "allowed_countries": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "preferred_regions": { "type": "array", "items": { "type": "string" } },
+        "avoid_regions": { "type": "array", "items": { "type": "string" } },
+        "campus_setting": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["urban", "college town", "rural", "coastal", "small city", "suburban", "no preference"] }
+        },
+        "climate_preferences": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "financial": {
+      "type": "object",
+      "required": ["budget_band"],
+      "properties": {
+        "budget_band": {
+          "type": "string",
+          "enum": ["no_constraint", "merit_only", "aid_needed", "full_scholarship_required"]
+        },
+        "need_based_aid_required": { "type": "boolean", "default": false },
+        "merit_aid_interest": { "type": "boolean", "default": true },
+        "public_ok_for_oos": { "type": "boolean", "default": true },
+        "loan_tolerance": { "type": "string", "enum": ["none", "low", "medium", "high"] }
+      }
+    },
+    "activities": {
+      "type": "object",
+      "properties": {
+        "primary_hooks": { "type": "array", "items": { "type": "string" } },
+        "activity_priority": {
+          "type": "object",
+          "additionalProperties": { "type": "string", "enum": ["critical", "high", "medium", "low"] }
+        },
+        "recruiting_interest": {
+          "type": "object",
+          "properties": {
+            "varsity_or_high_level_team_needed": { "type": "boolean" },
+            "club_team_ok": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "experience_preferences": {
+      "type": "object",
+      "properties": {
+        "school_size": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["small (<5k students)", "medium (5-15k)", "large (15-30k)", "very large (>30k)", "no preference"] }
+        },
+        "teaching_style": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["research university", "liberal arts college", "technical institute", "mixed", "no preference"] }
+        },
+        "residential_systems_ok": { "type": "boolean", "default": true },
+        "liberal_arts_college_ok": { "type": "boolean", "default": true }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "hard_filters": { "type": "array", "items": { "type": "string" } },
+        "special_notes": { "type": "string" }
+      }
+    },
+    "application_strategy": {
+      "type": "object",
+      "required": ["target_list_size"],
+      "properties": {
+        "target_list_size": { "type": "integer", "minimum": 1, "maximum": 30 },
+        "reach_count": { "type": "integer" },
+        "match_count": { "type": "integer" },
+        "safety_count": { "type": "integer" }
+      }
+    }
+  }
+}

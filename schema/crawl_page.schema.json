@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "crawl_page.schema.json",
+  "title": "CrawlPage",
+  "description": "One record per crawled page, stored as a JSONL line in pages.jsonl",
+  "type": "object",
+  "required": ["college", "url", "crawled_at"],
+  "properties": {
+    "college": { "type": "string" },
+    "url": { "type": "string", "format": "uri" },
+    "final_url": { "type": ["string", "null"], "format": "uri" },
+    "status": { "type": ["integer", "null"] },
+    "depth": { "type": "integer", "minimum": 0 },
+    "title": { "type": ["string", "null"] },
+    "text": { "type": ["string", "null"] },
+    "links": { "type": "array", "items": { "type": "string", "format": "uri" } },
+    "crawled_at": { "type": "string", "format": "date-time" },
+    "error": { "type": ["string", "null"] }
+  }
+}

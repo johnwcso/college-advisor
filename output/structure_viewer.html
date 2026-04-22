@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>College Advisor — Project Structure</title>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{
+  --color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;
+  --color-surface-offset:#f3f0ec;--color-border:#d4d1ca;--color-divider:#dcd9d5;
+  --color-text:#28251d;--color-text-muted:#7a7974;--color-text-faint:#bab9b4;
+  --color-primary:#01696f;--color-primary-hover:#0c4e54;--color-primary-highlight:#cedcd8;
+  --color-blue:#006494;--color-blue-highlight:#c6d8e4;
+  --color-purple:#7a39bb;--color-purple-highlight:#dacfde;
+  --color-success:#437a22;--color-success-highlight:#d4dfcc;
+  --color-warning:#964219;--color-warning-highlight:#ddcfc6;
+  --color-orange:#da7101;--color-orange-highlight:#e7d7c4;
+  --color-gold:#d19900;--color-gold-highlight:#e9e0c6;
+  --font-display:'Cabinet Grotesk',sans-serif;
+  --font-body:'Satoshi',sans-serif;
+  --radius-sm:0.375rem;--radius-md:0.5rem;--radius-lg:0.75rem;--radius-xl:1rem;
+  --shadow-sm:0 1px 2px oklch(0.2 0.01 80/0.06);
+  --shadow-md:0 4px 12px oklch(0.2 0.01 80/0.08);
+  --transition:180ms cubic-bezier(0.16,1,0.3,1);
+}
+[data-theme="dark"]{
+  --color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;
+  --color-surface-offset:#1d1c1a;--color-border:#393836;--color-divider:#262523;
+  --color-text:#cdccca;--color-text-muted:#797876;--color-text-faint:#5a5957;
+  --color-primary:#4f98a3;--color-primary-hover:#227f8b;--color-primary-highlight:#313b3b;
+  --color-blue:#5591c7;--color-blue-highlight:#3a4550;
+  --color-purple:#a86fdf;--color-purple-highlight:#4e4652;
+  --color-success:#6daa45;--color-success-highlight:#3a4435;
+  --color-warning:#bb653b;--color-warning-highlight:#564942;
+  --color-orange:#fdab43;--color-orange-highlight:#564b3e;
+  --color-gold:#e8af34;--color-gold-highlight:#4d4332;
+  --shadow-sm:0 1px 2px oklch(0 0 0/0.2);--shadow-md:0 4px 12px oklch(0 0 0/0.3);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth}
+body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-body,sans-serif);font-size:clamp(0.875rem,0.8rem+0.35vw,1rem);line-height:1.6;min-height:100dvh}
+
+/* Header */
+header{background:var(--color-surface);border-bottom:1px solid var(--color-border);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50;box-shadow:var(--shadow-sm)}
+.logo{display:flex;align-items:center;gap:0.75rem}
+.logo-icon{width:36px;height:36px}
+.logo-text{font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--color-primary)}
+.logo-sub{font-size:0.75rem;color:var(--color-text-muted);font-weight:400;margin-top:-2px}
+.header-right{display:flex;align-items:center;gap:0.75rem}
+.tab-bar{display:flex;background:var(--color-surface-offset);border-radius:var(--radius-lg);padding:3px;gap:2px}
+.tab{padding:0.35rem 0.9rem;border-radius:calc(var(--radius-lg) - 3px);font-size:0.8rem;font-weight:500;cursor:pointer;border:none;background:transparent;color:var(--color-text-muted);transition:all var(--transition)}
+.tab.active{background:var(--color-surface);color:var(--color-text);box-shadow:var(--shadow-sm)}
+.tab:hover:not(.active){color:var(--color-text)}
+.theme-btn{background:none;border:1px solid var(--color-border);color:var(--color-text-muted);border-radius:var(--radius-md);width:34px;height:34px;display:grid;place-items:center;cursor:pointer;transition:all var(--transition)}
+.theme-btn:hover{border-color:var(--color-primary);color:var(--color-primary)}
+
+/* Layout */
+main{max-width:1280px;margin:0 auto;padding:2rem 1.5rem}
+.view{display:none}.view.active{display:block}
+
+/* Page title */
+.page-title{font-family:var(--font-display);font-size:clamp(1.5rem,1.2rem+1.25vw,2.25rem);font-weight:800;margin-bottom:0.5rem}
+.page-subtitle{color:var(--color-text-muted);font-size:0.95rem;margin-bottom:2rem;max-width:65ch}
+
+/* Directory tree */
+.tree-wrap{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-md)}
+.tree-header{background:var(--color-surface-offset);padding:0.75rem 1.25rem;font-size:0.8rem;color:var(--color-text-muted);font-weight:500;display:flex;align-items:center;gap:0.5rem;border-bottom:1px solid var(--color-divider)}
+.tree-dots{display:flex;gap:5px}.dot{width:10px;height:10px;border-radius:50%}
+.dot-r{background:#f76f6f}.dot-y{background:#f7c44f}.dot-g{background:#4caf7d}
+.tree-body{padding:1.25rem 1.5rem;font-family:'SF Mono','Fira Code',monospace;font-size:0.82rem;line-height:2}
+.tree-line{display:flex;align-items:baseline;gap:0.5rem;cursor:default}
+.tree-line:hover .tree-name{color:var(--color-primary)}
+.tree-prefix{color:var(--color-text-faint);user-select:none;white-space:pre}
+.tree-icon{font-size:0.85em}
+.tree-name{color:var(--color-text);font-weight:500}
+.tree-name.folder{color:var(--color-text);font-weight:700}
+.tree-comment{color:var(--color-text-faint);font-size:0.78rem;margin-left:auto;padding-left:1rem;white-space:nowrap}
+.tree-badge{display:inline-block;padding:1px 6px;border-radius:4px;font-size:0.68rem;font-weight:600;margin-left:0.35rem;vertical-align:middle}
+
+/* Layer cards */
+.layer-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:1.25rem;margin-top:1.5rem}
+.layer-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:1.5rem;box-shadow:var(--shadow-sm);transition:box-shadow var(--transition),transform var(--transition)}
+.layer-card:hover{box-shadow:var(--shadow-md);transform:translateY(-1px)}
+.layer-num{font-family:var(--font-display);font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem}
+.layer-title{font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:0.4rem}
+.layer-desc{font-size:0.88rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.6}
+.layer-io{display:flex;flex-direction:column;gap:0.4rem}
+.io-row{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.8rem}
+.io-label{font-weight:600;min-width:44px;padding-top:1px;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--color-text-muted)}
+.io-val{color:var(--color-text-muted);font-family:'SF Mono','Fira Code',monospace;font-size:0.75rem;background:var(--color-surface-offset);padding:2px 8px;border-radius:var(--radius-sm);border:1px solid var(--color-divider)}
+.layer-scripts{margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.4rem}
+.script-tag{font-family:'SF Mono','Fira Code',monospace;font-size:0.72rem;padding:3px 8px;border-radius:var(--radius-sm);background:var(--color-surface-offset);border:1px solid var(--color-divider);color:var(--color-text-muted)}
+
+/* Schema table */
+.schema-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:1.25rem;margin-top:1.5rem}
+.schema-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:1.5rem;box-shadow:var(--shadow-sm)}
+.schema-filename{font-family:'SF Mono','Fira Code',monospace;font-size:0.82rem;font-weight:600;color:var(--color-primary);margin-bottom:0.35rem}
+.schema-desc{font-size:0.85rem;color:var(--color-text-muted);margin-bottom:0.85rem}
+.schema-fields{display:flex;flex-direction:column;gap:0.3rem}
+.field-row{font-size:0.78rem;display:flex;align-items:flex-start;gap:0.5rem;padding:0.2rem 0;border-bottom:1px solid var(--color-divider)}
+.field-row:last-child{border:none}
+.field-name{font-family:'SF Mono','Fira Code',monospace;color:var(--color-text);min-width:140px;font-weight:500}
+.field-type{color:var(--color-text-faint);min-width:80px;font-size:0.72rem;padding-top:1px}
+.field-note{color:var(--color-text-muted);font-size:0.72rem}
+
+/* Color accents for layers */
+.accent-blue{--ac:var(--color-blue);--ach:var(--color-blue-highlight)}
+.accent-purple{--ac:var(--color-purple);--ach:var(--color-purple-highlight)}
+.accent-primary{--ac:var(--color-primary);--ach:var(--color-primary-highlight)}
+.accent-orange{--ac:var(--color-orange);--ach:var(--color-orange-highlight)}
+.accent-success{--ac:var(--color-success);--ach:var(--color-success-highlight)}
+.accent-gold{--ac:var(--color-gold);--ach:var(--color-gold-highlight)}
+.layer-card.accent-blue,.layer-card.accent-purple,.layer-card.accent-primary,.layer-card.accent-orange,.layer-card.accent-success,.layer-card.accent-gold{border-color:color-mix(in oklch,var(--ac) 30%,var(--color-border))}
+.layer-num{color:var(--ac,var(--color-primary))}
+.layer-title{color:var(--color-text)}
+
+/* Flow diagram */
+.flow{display:flex;flex-direction:column;gap:0;max-width:700px;margin:2rem auto 0}
+.flow-node{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:0.85rem 1.25rem;display:flex;align-items:center;gap:0.85rem;box-shadow:var(--shadow-sm);transition:box-shadow var(--transition)}
+.flow-node:hover{box-shadow:var(--shadow-md)}
+.flow-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.flow-label{font-weight:600;font-size:0.9rem}
+.flow-sub{font-size:0.78rem;color:var(--color-text-muted);margin-top:1px}
+.flow-arrow{text-align:center;color:var(--color-text-faint);padding:0.4rem 0;font-size:1.1rem}
+.flow-script{margin-left:auto;font-family:'SF Mono','Fira Code',monospace;font-size:0.72rem;color:var(--color-text-muted);background:var(--color-surface-offset);padding:2px 8px;border-radius:var(--radius-sm);border:1px solid var(--color-divider)}
+
+/* Badge colors */
+.bg-blue{background:var(--color-blue-highlight);color:var(--color-blue)}
+.bg-purple{background:var(--color-purple-highlight);color:var(--color-purple)}
+.bg-green{background:var(--color-success-highlight);color:var(--color-success)}
+.bg-orange{background:var(--color-orange-highlight);color:var(--color-orange)}
+.bg-gold{background:var(--color-gold-highlight);color:var(--color-gold)}
+.bg-teal{background:var(--color-primary-highlight);color:var(--color-primary)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <svg class="logo-icon" viewBox="0 0 36 36" fill="none" aria-label="College Advisor logo">
+      <rect width="36" height="36" rx="8" fill="var(--color-primary)" opacity="0.12"/>
+      <path d="M18 8L32 15L18 22L4 15Z" stroke="var(--color-primary)" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+      <path d="M4 15v8c0 0 5 5 14 5s14-5 14-5V15" stroke="var(--color-primary)" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+      <path d="M32 15v6" stroke="var(--color-primary)" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="32" cy="22.5" r="1.5" fill="var(--color-primary)"/>
+    </svg>
+    <div>
+      <div class="logo-text">college-advisor/</div>
+      <div class="logo-sub">Project Structure Reference</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="tab-bar">
+      <button class="tab active" onclick="showView('structure')">Structure</button>
+      <button class="tab" onclick="showView('layers')">Layers</button>
+      <button class="tab" onclick="showView('schemas')">Schemas</button>
+      <button class="tab" onclick="showView('flow')">Flow</button>
+    </div>
+    <button class="theme-btn" data-theme-toggle aria-label="Toggle theme">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- STRUCTURE VIEW -->
+<div class="view active" id="view-structure">
+  <div class="page-title">Project Structure</div>
+  <div class="page-subtitle">All files live inside <code>college-advisor/</code>. Move this directory anywhere — just update the cron path and <code>config/settings.json</code> output_dir.</div>
+  <div class="tree-wrap">
+    <div class="tree-header">
+      <div class="tree-dots"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div></div>
+      college-advisor/
+    </div>
+    <div class="tree-body" id="tree"></div>
+  </div>
+</div>
+
+<!-- LAYERS VIEW -->
+<div class="view" id="view-layers">
+  <div class="page-title">System Layers</div>
+  <div class="page-subtitle">Each layer is a discrete, independently runnable module. Run them in sequence or individually.</div>
+  <div class="layer-grid">
+    <div class="layer-card accent-blue">
+      <div class="layer-num">Layer 1a — Intake</div>
+      <div class="layer-title">Student Profile Builder</div>
+      <div class="layer-desc">Interactive CLI interview (or questionnaire form) that collects academic, geographic, financial, activity, and strategy preferences from a new student.</div>
+      <div class="layer-io">
+        <div class="io-row"><span class="io-label">In</span><span class="io-val">questionnaire.json + user input</span></div>
+        <div class="io-row"><span class="io-label">Out</span><span class="io-val">data/student_profiles/profile_&lt;id&gt;.json</span></div>
+      </div>
+      <div class="layer-scripts"><span class="script-tag">intake/intake_cli.py</span><span class="script-tag">intake/questionnaire.json</span></div>
+    </div>
+    <div class="layer-card accent-purple">
+      <div class="layer-num">Layer 1b — Discovery</div>
+      <div class="layer-title">College List Generator</div>
+      <div class="layer-desc">Scores and filters the base college catalog against the student profile. Proposes reach/match/safety tiers and generates the seed URLs for the crawler config.</div>
+      <div class="layer-io">
+        <div class="io-row"><span class="io-label">In</span><span class="io-val">profile_&lt;id&gt;.json + catalog.json</span></div>
+        <div class="io-row"><span class="io-label">Out</span><span class="io-val">updates config/colleges.json</span></div>
+      </div>
+      <div class="layer-scripts"><span class="script-tag">discovery/discover_colleges.py</span><span class="script-tag">config/catalog.json</span></div>
+    </div>
+    <div class="layer-card accent-primary">
+      <div class="layer-num">Layer 2 — Crawl</div>
+      <div class="layer-title">Playwright Web Crawler</div>
+      <div class="layer-desc">Visits official college admissions, academics, aid, and athletics pages using a real browser. Handles JS-heavy pages, follows links within allowed domains, and stores rendered text and page metadata.</div>
+      <div class="layer-io">
+        <div class="io-row"><span class="io-label">In</span><span class="io-val">config/colleges.json</span></div>
+        <div class="io-row"><span class="io-label">Out</span><span class="io-val">data/crawl_output/&lt;college&gt;/</span></div>
+      </div>
+      <div class="layer-scripts"><span class="script-tag">crawler/college_crawl.py</span><span class="script-tag">config/settings.json</span></div>
+    </div>
+    <div class="layer-card accent-orange">
+      <div class="layer-num">Layer 3 — Verify</div>
+      <div class="layer-title">Data Verification</div>
+      <div class="layer-desc">Checks that crawl output is structurally correct, extracts key signals (deadlines, tuition, test policy), and detects content drift between crawl runs. Flags anomalies for review.</div>
+      <div class="layer-io">
+        <div class="io-row"><span class="io-label">In</span><span class="io-val">data/crawl_output/</span></div>
+        <div class="io-row"><span class="io-label">Out</span><span class="io-val">verification report + console flags</span></div>
+      </div>
+      <div class="layer-scripts"><span class="script-tag">verification/verify_college_data.py</span></div>
+    </div>
+    <div class="layer-card accent-success">
+      <div class="layer-num">Layer 4 — Improve</div>
+      <div class="layer-title">Auto-Improve Engine</div>
+      <div class="layer-desc">Analyzes crawl history and verification signals to propose structured actions: add seeds, tighten regexes, adjust crawl frequency, or flag colleges that no longer fit a student's profile.</div>
+      <div class="layer-io">
+        <div class="io-row"><span class="io-label">In</span><span class="io-val">data/crawl_output/ + profiles</span></div>
+        <div class="io-row"><span class="io-label">Out</span><span class="io-val">output/actions/actions_&lt;date&gt;.json</span></div>
+      </div>
+      <div class="layer-scripts"><span class="script-tag">improve/auto_improve.py</span></div>
+    </div>
+    <div class="layer-card accent-gold">
+      <div class="layer-num">Layer 5 — View</div>
+      <div class="layer-title">HTML Viewer</div>
+      <div class="layer-desc">Generates a self-contained, searchable HTML dashboard from all crawl output. No server required — open the file directly in any browser.</div>
+      <div class="layer-io">
+        <div class="io-row"><span class="io-label">In</span><span class="io-val">data/crawl_output/</span></div>
+        <div class="io-row"><span class="io-label">Out</span><span class="io-val">output/viewer.html</span></div>
+      </div>
+      <div class="layer-scripts"><span class="script-tag">viewer/generate_viewer.py</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- SCHEMAS VIEW -->
+<div class="view" id="view-schemas">
+  <div class="page-title">Schema Files</div>
+  <div class="page-subtitle">All data files are validated against these JSON Schemas. Located in <code>schema/</code>.</div>
+  <div class="schema-grid">
+    <div class="schema-card">
+      <div class="schema-filename">student_profile.schema.json</div>
+      <div class="schema-desc">Validates <code>data/student_profiles/profile_*.json</code>. Generated by intake_cli.py.</div>
+      <div class="schema-fields">
+        <div class="field-row"><span class="field-name">student_id</span><span class="field-type">string</span><span class="field-note">Unique ID e.g. uuid</span></div>
+        <div class="field-row"><span class="field-name">academic</span><span class="field-type">object</span><span class="field-note">curriculum, scores, majors, selectivity</span></div>
+        <div class="field-row"><span class="field-name">geography</span><span class="field-type">object</span><span class="field-note">countries, regions, campus setting</span></div>
+        <div class="field-row"><span class="field-name">financial</span><span class="field-type">object</span><span class="field-note">budget_band, aid_required, loans</span></div>
+        <div class="field-row"><span class="field-name">activities</span><span class="field-type">object</span><span class="field-note">hooks, priority, recruiting interest</span></div>
+        <div class="field-row"><span class="field-name">experience_preferences</span><span class="field-type">object</span><span class="field-note">size, teaching style</span></div>
+        <div class="field-row"><span class="field-name">constraints</span><span class="field-type">object</span><span class="field-note">hard_filters, special_notes</span></div>
+        <div class="field-row"><span class="field-name">application_strategy</span><span class="field-type">object</span><span class="field-note">target_list_size, reach/match/safety counts</span></div>
+      </div>
+    </div>
+    <div class="schema-card">
+      <div class="schema-filename">college_catalog.schema.json</div>
+      <div class="schema-desc">Validates each entry in <code>config/catalog.json</code>. Used for discovery scoring.</div>
+      <div class="schema-fields">
+        <div class="field-row"><span class="field-name">id</span><span class="field-type">string</span><span class="field-note">Slug e.g. harvard-university</span></div>
+        <div class="field-row"><span class="field-name">name</span><span class="field-type">string</span><span class="field-note">Display name</span></div>
+        <div class="field-row"><span class="field-name">country / region</span><span class="field-type">string</span><span class="field-note">ISO country + region label</span></div>
+        <div class="field-row"><span class="field-name">selectivity</span><span class="field-type">enum</span><span class="field-note">highly selective / selective / …</span></div>
+        <div class="field-row"><span class="field-name">majors_available</span><span class="field-type">string[]</span><span class="field-note">List of offered disciplines</span></div>
+        <div class="field-row"><span class="field-name">sailing_team</span><span class="field-type">object</span><span class="field-note">has_team, level (varsity/club), conference</span></div>
+        <div class="field-row"><span class="field-name">aid</span><span class="field-type">object</span><span class="field-note">need_blind, meets_full_need, merit</span></div>
+        <div class="field-row"><span class="field-name">official_seeds</span><span class="field-type">uri[]</span><span class="field-note">Admissions/program URLs for crawler</span></div>
+      </div>
+    </div>
+    <div class="schema-card">
+      <div class="schema-filename">crawl_page.schema.json</div>
+      <div class="schema-desc">Validates each JSONL line in <code>data/crawl_output/*/pages.jsonl</code>.</div>
+      <div class="schema-fields">
+        <div class="field-row"><span class="field-name">college</span><span class="field-type">string</span><span class="field-note">College name</span></div>
+        <div class="field-row"><span class="field-name">url / final_url</span><span class="field-type">uri</span><span class="field-note">Requested and resolved URL</span></div>
+        <div class="field-row"><span class="field-name">status</span><span class="field-type">integer</span><span class="field-note">HTTP status code</span></div>
+        <div class="field-row"><span class="field-name">depth</span><span class="field-type">integer</span><span class="field-note">Crawl depth from seed</span></div>
+        <div class="field-row"><span class="field-name">title</span><span class="field-type">string</span><span class="field-note">Page &lt;title&gt;</span></div>
+        <div class="field-row"><span class="field-name">text</span><span class="field-type">string</span><span class="field-note">Rendered body text (post-JS)</span></div>
+        <div class="field-row"><span class="field-name">links</span><span class="field-type">uri[]</span><span class="field-note">All links extracted from page</span></div>
+        <div class="field-row"><span class="field-name">crawled_at</span><span class="field-type">date-time</span><span class="field-note">ISO 8601 timestamp</span></div>
+        <div class="field-row"><span class="field-name">error</span><span class="field-type">string?</span><span class="field-note">Null if success</span></div>
+      </div>
+    </div>
+    <div class="schema-card">
+      <div class="schema-filename">action.schema.json</div>
+      <div class="schema-desc">Validates <code>output/actions/actions_*.json</code> emitted by auto_improve.py.</div>
+      <div class="schema-fields">
+        <div class="field-row"><span class="field-name">run_id</span><span class="field-type">string</span><span class="field-note">e.g. 2026-04-22-nightly</span></div>
+        <div class="field-row"><span class="field-name">generated_at</span><span class="field-type">date-time</span><span class="field-note">ISO 8601 timestamp</span></div>
+        <div class="field-row"><span class="field-name">actions[].type</span><span class="field-type">enum</span><span class="field-note">crawl_seed_add, regex_update, recrawl_frequency_change, student_list_flag, …</span></div>
+        <div class="field-row"><span class="field-name">actions[].priority</span><span class="field-type">enum</span><span class="field-note">critical / high / medium / low</span></div>
+        <div class="field-row"><span class="field-name">actions[].reason</span><span class="field-type">string</span><span class="field-note">Human-readable explanation</span></div>
+        <div class="field-row"><span class="field-name">actions[].proposed_value</span><span class="field-type">any</span><span class="field-note">New value to apply (regex, URL, days, etc.)</span></div>
+        <div class="field-row"><span class="field-name">actions[].auto_apply</span><span class="field-type">boolean</span><span class="field-note">Safe to apply without review</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FLOW VIEW -->
+<div class="view" id="view-flow">
+  <div class="page-title">End-to-End Flow</div>
+  <div class="page-subtitle">Run each step in sequence for a new student, or run steps individually for existing profiles.</div>
+  <div class="flow">
+    <div class="flow-node" style="border-color:color-mix(in oklch,var(--color-blue) 30%,var(--color-border))">
+      <div class="flow-dot" style="background:var(--color-blue)"></div>
+      <div><div class="flow-label">1a. Student Intake</div><div class="flow-sub">Interview → profile_&lt;id&gt;.json</div></div>
+      <span class="flow-script">intake/intake_cli.py</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node" style="border-color:color-mix(in oklch,var(--color-purple) 30%,var(--color-border))">
+      <div class="flow-dot" style="background:var(--color-purple)"></div>
+      <div><div class="flow-label">1b. College Discovery</div><div class="flow-sub">Score catalog → update colleges.json</div></div>
+      <span class="flow-script">discovery/discover_colleges.py</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node" style="border-color:color-mix(in oklch,var(--color-primary) 30%,var(--color-border))">
+      <div class="flow-dot" style="background:var(--color-primary)"></div>
+      <div><div class="flow-label">2. Crawl</div><div class="flow-sub">Playwright → crawl_output/</div></div>
+      <span class="flow-script">crawler/college_crawl.py</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node" style="border-color:color-mix(in oklch,var(--color-orange) 30%,var(--color-border))">
+      <div class="flow-dot" style="background:var(--color-orange)"></div>
+      <div><div class="flow-label">3. Verify</div><div class="flow-sub">Structural + extraction + drift checks</div></div>
+      <span class="flow-script">verification/verify_college_data.py</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node" style="border-color:color-mix(in oklch,var(--color-success) 30%,var(--color-border))">
+      <div class="flow-dot" style="background:var(--color-success)"></div>
+      <div><div class="flow-label">4. Auto-Improve</div><div class="flow-sub">Emit action proposals → actions_&lt;date&gt;.json</div></div>
+      <span class="flow-script">improve/auto_improve.py</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node" style="border-color:color-mix(in oklch,var(--color-gold) 30%,var(--color-border))">
+      <div class="flow-dot" style="background:var(--color-gold)"></div>
+      <div><div class="flow-label">5. View</div><div class="flow-sub">Build viewer.html from crawl output</div></div>
+      <span class="flow-script">viewer/generate_viewer.py</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node" style="background:var(--color-surface-offset)">
+      <div class="flow-dot" style="background:var(--color-text-faint)"></div>
+      <div><div class="flow-label">🔁 Weekly Cron Refresh</div><div class="flow-sub">college_crawl.py --interval 7 → re-runs crawl + verify + improve</div></div>
+      <span class="flow-script">crontab</span>
+    </div>
+  </div>
+</div>
+</main>
+
+<script>
+// Tree data
+const tree = [
+  {l:0,f:true,n:'college-advisor/',c:''},
+  {l:1,f:false,n:'README.md',c:'Setup guide + quick start',badge:'doc',bc:'bg-teal'},
+  {l:1,f:true,n:'config/',c:'All static configuration'},
+  {l:2,f:false,n:'colleges.json',c:'College list + seeds + allow/deny',badge:'edited',bc:'bg-blue'},
+  {l:2,f:false,n:'settings.json',c:'Global crawler defaults',badge:'config',bc:'bg-blue'},
+  {l:2,f:false,n:'catalog.json',c:'Base institution metadata for scoring',badge:'data',bc:'bg-purple'},
+  {l:1,f:true,n:'data/',c:'All runtime data (gitignore output)'},
+  {l:2,f:true,n:'student_profiles/',c:''},
+  {l:3,f:false,n:'profile_<id>.json',c:'One per student',badge:'generated',bc:'bg-blue'},
+  {l:2,f:true,n:'crawl_output/',c:''},
+  {l:3,f:false,n:'summary.json',c:'Cross-college crawl overview',badge:'generated',bc:'bg-green'},
+  {l:3,f:true,n:'harvard_university/',c:''},
+  {l:4,f:false,n:'meta.json',c:'Last crawled, page count, seeds'},
+  {l:4,f:false,n:'pages.jsonl',c:'One JSON line per page'},
+  {l:4,f:true,n:'text/',c:'Plain text files per page (if enabled)'},
+  {l:1,f:true,n:'schema/',c:'JSON Schema definitions'},
+  {l:2,f:false,n:'student_profile.schema.json',c:'Validates student profiles',badge:'schema',bc:'bg-orange'},
+  {l:2,f:false,n:'college_catalog.schema.json',c:'Validates catalog.json entries',badge:'schema',bc:'bg-orange'},
+  {l:2,f:false,n:'crawl_page.schema.json',c:'Validates pages.jsonl records',badge:'schema',bc:'bg-orange'},
+  {l:2,f:false,n:'action.schema.json',c:'Validates auto-improve actions',badge:'schema',bc:'bg-orange'},
+  {l:1,f:true,n:'intake/',c:'Layer 1a — Student intake'},
+  {l:2,f:false,n:'questionnaire.json',c:'Interview question definitions',badge:'config',bc:'bg-blue'},
+  {l:2,f:false,n:'intake_cli.py',c:'CLI Q&A → profile JSON',badge:'script',bc:'bg-purple'},
+  {l:1,f:true,n:'discovery/',c:'Layer 1b — College discovery'},
+  {l:2,f:false,n:'discover_colleges.py',c:'Score catalog vs profile → college list',badge:'script',bc:'bg-purple'},
+  {l:1,f:true,n:'crawler/',c:'Layer 2 — Playwright crawl'},
+  {l:2,f:false,n:'college_crawl.py',c:'Main crawler (already built)',badge:'script',bc:'bg-green'},
+  {l:1,f:true,n:'verification/',c:'Layer 3 — Data verification'},
+  {l:2,f:false,n:'verify_college_data.py',c:'Structural + extraction + drift checks',badge:'script',bc:'bg-orange'},
+  {l:1,f:true,n:'improve/',c:'Layer 4 — Auto-improve'},
+  {l:2,f:false,n:'auto_improve.py',c:'Emits structured action proposals',badge:'script',bc:'bg-green'},
+  {l:1,f:true,n:'viewer/',c:'Layer 5 — HTML viewer'},
+  {l:2,f:false,n:'generate_viewer.py',c:'Builds viewer.html from output',badge:'script',bc:'bg-gold'},
+  {l:1,f:true,n:'logs/',c:'Runtime logs'},
+  {l:2,f:false,n:'.gitkeep',c:''},
+  {l:1,f:true,n:'output/',c:'All generated outputs (gitignore)'},
+  {l:2,f:true,n:'actions/',c:''},
+  {l:3,f:false,n:'actions_<date>.json',c:'Auto-improve proposals',badge:'generated',bc:'bg-green'},
+  {l:2,f:true,n:'reports/',c:''},
+  {l:3,f:false,n:'student_<id>_report.json',c:'Per-student discovery report'},
+  {l:2,f:false,n:'viewer.html',c:'Self-contained HTML dashboard',badge:'generated',bc:'bg-gold'},
+];
+
+function buildTree(){
+  const el=document.getElementById('tree');
+  const icons={true:'📁',false:'📄'};
+  let html='';
+  for(let i=0;i<tree.length;i++){
+    const n=tree[i];
+    const isLast=(i===tree.length-1)||tree[i+1].l<=n.l;
+    const prefix='  '.repeat(n.l)+(n.l===0?'':isLast?'└── ':'├── ');
+    const badge=n.badge?`<span class="tree-badge ${n.bc||''}">${n.badge}</span>`:'';
+    html+=`<div class="tree-line"><span class="tree-prefix">${prefix}</span><span class="tree-icon">${icons[n.f]}</span><span class="tree-name${n.f?' folder':''}">${n.n}</span>${badge}<span class="tree-comment">${n.c?'← '+n.c:''}</span></div>`;
+  }
+  el.innerHTML=html;
+}
+
+function showView(id){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.getElementById('view-'+id).classList.add('active');
+  document.querySelectorAll('.tab').forEach((t,i)=>{
+    const ids=['structure','layers','schemas','flow'];
+    t.classList.toggle('active',ids[i]===id);
+  });
+}
+
+// Theme
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  t&&t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';
+    r.setAttribute('data-theme',d);
+    t.innerHTML=d==='dark'?'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  });
+})();
+
+buildTree();
+</script>
+</body>
+</html>

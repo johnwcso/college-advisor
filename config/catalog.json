@@ -1,0 +1,49 @@
+[
+  {
+    "id": "yale-university",
+    "name": "Yale University",
+    "country": "USA",
+    "majors_available": [
+      "Zoology",
+      "Biology",
+      "Economics"
+    ],
+    "sailing_team": {
+      "has_team": true,
+      "level": "varsity",
+      "conference": "NEISA"
+    },
+    "aid": {
+      "need_blind_international": true,
+      "merit_available": false
+    },
+    "official_seeds": [
+      "https://admissions.yale.edu"
+    ],
+    "allow_regex": "yale\\.edu",
+    "deny_regex": "login"
+  },
+  {
+    "id": "harvard-university",
+    "name": "Harvard University",
+    "country": "USA",
+    "majors_available": [
+      "Biology",
+      "Computer Science"
+    ],
+    "sailing_team": {
+      "has_team": true,
+      "level": "varsity",
+      "conference": "NEISA"
+    },
+    "aid": {
+      "need_blind_international": true,
+      "merit_available": false
+    },
+    "official_seeds": [
+      "https://college.harvard.edu/admissions"
+    ],
+    "allow_regex": "harvard\\.edu",
+    "deny_regex": "login"
+  }
+]

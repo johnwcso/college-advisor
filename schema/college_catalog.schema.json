@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "college_catalog.schema.json",
+  "title": "CollegeCatalogEntry",
+  "description": "Base metadata for a college used in discovery scoring",
+  "type": "object",
+  "required": ["id", "name", "country", "official_seeds"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique slug, e.g. harvard-university" },
+    "name": { "type": "string" },
+    "country": { "type": "string" },
+    "region": { "type": "string" },
+    "setting": { "type": "string", "enum": ["urban", "college town", "rural", "coastal", "suburban"] },
+    "size": { "type": "string", "enum": ["small", "medium", "large", "very large"] },
+    "type": { "type": "string", "enum": ["research university", "liberal arts college", "technical institute", "mixed"] },
+    "selectivity": { "type": "string", "enum": ["highly selective", "selective", "moderately selective", "open"] },
+    "majors_available": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "sailing_team": {
+      "type": "object",
+      "properties": {
+        "has_team": { "type": "boolean" },
+        "level": { "type": "string", "enum": ["varsity", "club", "none", "unknown"] },
+        "conference": { "type": "string" }
+      }
+    },
+    "aid": {
+      "type": "object",
+      "properties": {
+        "need_blind_domestic": { "type": "boolean" },
+        "need_blind_international": { "type": ["boolean", "null"] },
+        "meets_full_need": { "type": "boolean" },
+        "merit_available": { "type": "boolean" }
+      }
+    },
+    "official_seeds": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "minItems": 1,
+      "description": "Official admissions/program page URLs used as crawler seeds"
+    },
+    "allow_regex": { "type": "string" },
+    "deny_regex": { "type": "string" }
+  }
+}
