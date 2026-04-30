@@ -1,0 +1,2512 @@
+[
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "2627"
+    ],
+    "institution": {
+      "footnote": null,
+      "isPublic": true,
+      "primaryKey": "2627",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "Princeton University",
+      "sortName": "princetonuniversity",
+      "urlName": "princeton-university",
+      "aliasNames": null,
+      "state": "NJ",
+      "city": "Princeton",
+      "zip": "08544",
+      "region": null,
+      "xwalkId": "186131",
+      "metroId": "45940",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#1",
+      "rankingDisplayScore": "100",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 1,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": false,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/princeton-university-2627\">Princeton University</a></strong>",
+      "location": "Princeton, NJ",
+      "rankingFullDisplayText": "#1 in National Universities",
+      "heroImage": false,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/519bc26/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F4a%2Fde%2Fe754e2714cae81f92edb1c7b273d%2F190827princeton-university23.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/85e7e84/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F4a%2Fde%2Fe754e2714cae81f92edb1c7b273d%2F190827princeton-university23.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/2756486/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F4a%2Fde%2Fe754e2714cae81f92edb1c7b273d%2F190827princeton-university23.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/8a92950/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F4a%2Fde%2Fe754e2714cae81f92edb1c7b273d%2F190827princeton-university23.jpg",
+      "photoCount": 24,
+      "premiumSchool": false
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#1",
+      "displayScore": "100",
+      "maxPossibleScore": null,
+      "sortRank": 1,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": false
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 65210,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$65,210",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 5813,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "5,813",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 13939.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$13,939",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 67,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "67%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 5,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "5%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": 3.9,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "3.9",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1510,
+        "fieldName": "satCompSearch",
+        "displayValue": "1510-1580",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "actScoreSearch",
+        "displayValue": "34-35",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": "4.2",
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "4.2",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "4.7",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "4.7",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": "4.7",
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "4.7",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "4.9",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "4.9",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1510-1580",
+            "name": "SAT"
+          },
+          {
+            "value": "34-35",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "186131",
+    "blurb": "<p>Princeton University is a private institution that was founded in 1746. In the 2026 edition of Best Colleges, Princeton University is ranked No. #1 in National Universities. It's also ranked No. #1 in Best Value Schools.</p> <p>It has a total undergraduate enrollment of 5,813 (fall 2024), its setting is suburban, and the campus size is 3,500 acres. The student-faculty ratio at Princeton University is 5:1, and it utilizes a semester-based academic calendar.</p> <p>Princeton University accepts the Common Application and has a test-optional admissions policy. The school's tuition and fees are $65,210. Sixty-seven percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $8,143.</p> <p>The four-year graduation rate is 75%. Six years after graduation, the median salary for graduates is $87,815.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#1",
+      "displayScore": "100",
+      "maxPossibleScore": null,
+      "sortRank": 1,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": false,
+      "isPublic": true
+    }
+  },
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "2178"
+    ],
+    "institution": {
+      "footnote": null,
+      "isPublic": true,
+      "primaryKey": "2178",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "Massachusetts Institute of Technology",
+      "sortName": "massachusettsinstituteoftechnology",
+      "urlName": "massachusetts-institute-of-technology",
+      "aliasNames": "MIT",
+      "state": "MA",
+      "city": "Cambridge",
+      "zip": "02139",
+      "region": null,
+      "xwalkId": "166683",
+      "metroId": "14460",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#2",
+      "rankingDisplayScore": "98",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 2,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": false,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/massachusetts-institute-of-technology-2178\">Massachusetts Institute of Technology</a></strong>",
+      "location": "Cambridge, MA",
+      "rankingFullDisplayText": "#2 in National Universities",
+      "heroImage": false,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/e36f3bc/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fa8%2Fc5193da7eb9dcbd26e794c018ac87a%2Fcollege-photo_6935.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/1813373/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fa8%2Fc5193da7eb9dcbd26e794c018ac87a%2Fcollege-photo_6935.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/512cb7b/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fa8%2Fc5193da7eb9dcbd26e794c018ac87a%2Fcollege-photo_6935.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/53203a5/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fa8%2Fc5193da7eb9dcbd26e794c018ac87a%2Fcollege-photo_6935.jpg",
+      "photoCount": 15,
+      "premiumSchool": false
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#2",
+      "displayScore": "98",
+      "maxPossibleScore": null,
+      "sortRank": 2,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": false
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 64730,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$64,730",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 4535,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "4,535",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 19729.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$19,729",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 56,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "56%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 5,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "5%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": null,
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1520,
+        "fieldName": "satCompSearch",
+        "displayValue": "1520-1580",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "actScoreSearch",
+        "displayValue": "34-36",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": "4.8",
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "4.8",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": "4.7",
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "4.7",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "5.0",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "5.0",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "4.9",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "4.9",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1520-1580",
+            "name": "SAT"
+          },
+          {
+            "value": "34-36",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "166683",
+    "blurb": "<p>Massachusetts Institute of Technology is a private institution that was founded in 1861. In the 2026 edition of Best Colleges, Massachusetts Institute of Technology is ranked No. #2 in National Universities. It's also ranked No. #2 in Most Innovative Schools.</p> <p>It has a total undergraduate enrollment of 4,535 (fall 2024), its setting is urban, and the campus size is 168 acres. The student-faculty ratio at Massachusetts Institute of Technology is 3:1, and it utilizes a 4-1-4-based academic calendar.</p> <p>Massachusetts Institute of Technology does not accept the Common Application. The school's tuition and fees are $64,730. Fifty-six percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $20,338.</p> <p>The four-year graduation rate is 83%. Six years after graduation, the median salary for graduates is $131,633.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#2",
+      "displayScore": "98",
+      "maxPossibleScore": null,
+      "sortRank": 2,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": false,
+      "isPublic": true
+    }
+  },
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "2155"
+    ],
+    "institution": {
+      "footnote": null,
+      "isPublic": true,
+      "primaryKey": "2155",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "Harvard University",
+      "sortName": "harvarduniversity",
+      "urlName": "harvard-university",
+      "aliasNames": null,
+      "state": "MA",
+      "city": "Cambridge",
+      "zip": "02138",
+      "region": null,
+      "xwalkId": "166027",
+      "metroId": "14460",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#3",
+      "rankingDisplayScore": "97",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 3,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": false,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/harvard-university-2155\">Harvard University</a></strong>",
+      "location": "Cambridge, MA",
+      "rankingFullDisplayText": "#3 in National Universities",
+      "heroImage": false,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/7326ec7/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F65%2F09a2103d862fb8eb15a9a6542c080b%2Fcollege-photo_8866.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/734abdb/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F65%2F09a2103d862fb8eb15a9a6542c080b%2Fcollege-photo_8866.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/378955f/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F65%2F09a2103d862fb8eb15a9a6542c080b%2Fcollege-photo_8866.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/3157a91/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F65%2F09a2103d862fb8eb15a9a6542c080b%2Fcollege-photo_8866.jpg",
+      "photoCount": 6,
+      "premiumSchool": false
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#3",
+      "displayScore": "97",
+      "maxPossibleScore": null,
+      "sortRank": 3,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": false
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 64796,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$64,796",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 7038,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "7,038",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 15126.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$15,126",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 55,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "55%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 4,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "4%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": 3.9,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "3.9",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1510,
+        "fieldName": "satCompSearch",
+        "displayValue": "1510-1580",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "actScoreSearch",
+        "displayValue": "34-36",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": "3.8",
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "3.8",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "4.4",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "4.4",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": "4.8",
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "4.8",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "4.9",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "4.9",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1510-1580",
+            "name": "SAT"
+          },
+          {
+            "value": "34-36",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "166027",
+    "blurb": "<p>Harvard University is a private institution that was founded in 1636. In the 2026 edition of Best Colleges, Harvard University is ranked No. #3 in National Universities. It's also ranked No. #2 in Best Value Schools.</p> <p>It has a total undergraduate enrollment of 7,038 (fall 2024), and the campus size is 5,603 acres. The student-faculty ratio at Harvard University is 7:1, and it utilizes a semester-based academic calendar.</p> <p>Harvard University accepts the Common Application. The school's tuition and fees are $64,796. Fifty-five percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $19,500.</p> <p>The four-year graduation rate is 56%. Six years after graduation, the median salary for graduates is $99,572.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#3",
+      "displayScore": "97",
+      "maxPossibleScore": null,
+      "sortRank": 3,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": false,
+      "isPublic": true
+    }
+  },
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "1305"
+    ],
+    "institution": {
+      "footnote": null,
+      "isPublic": true,
+      "primaryKey": "1305",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "Stanford University",
+      "sortName": "stanforduniversity",
+      "urlName": "stanford-university",
+      "aliasNames": null,
+      "state": "CA",
+      "city": "Stanford",
+      "zip": "94305",
+      "region": null,
+      "xwalkId": "243744",
+      "metroId": "41940",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#4",
+      "rankingDisplayScore": "95",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 4,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": true,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/stanford-university-1305\">Stanford University</a></strong>",
+      "location": "Stanford, CA",
+      "rankingFullDisplayText": "#4 in National Universities",
+      "heroImage": false,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/fcaf26c/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F6d%2Fc497d367e3b5da44ac673b8f9dfbbf%2Fcollege-photo_10369.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/64d25ff/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F6d%2Fc497d367e3b5da44ac673b8f9dfbbf%2Fcollege-photo_10369.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/2bdeee3/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F6d%2Fc497d367e3b5da44ac673b8f9dfbbf%2Fcollege-photo_10369.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/8610eb0/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F6d%2Fc497d367e3b5da44ac673b8f9dfbbf%2Fcollege-photo_10369.jpg",
+      "photoCount": 23,
+      "premiumSchool": false
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#4",
+      "displayScore": "95",
+      "maxPossibleScore": null,
+      "sortRank": 4,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 68544,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$68,544",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 7904,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "7,904",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 22892.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$22,892",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 48,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "48%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 4,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "4%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": 3.9,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "3.9",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1510,
+        "fieldName": "satCompSearch",
+        "displayValue": "1510-1580",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "actScoreSearch",
+        "displayValue": "34-35",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": "4.7",
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "4.7",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "4.9",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "4.9",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": "4.7",
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "4.7",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "5.0",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "5.0",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1510-1580",
+            "name": "SAT"
+          },
+          {
+            "value": "34-35",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "243744",
+    "blurb": "<p>Stanford University is a private institution that was founded in 1885. In the 2026 edition of Best Colleges, Stanford University is ranked No. #4 in National Universities. It's also ranked No. #4 in Lowest Acceptance Rates.</p> <p>It has a total undergraduate enrollment of 7,904 (fall 2024), its setting is suburban, and the campus size is 8,180 acres. The student-faculty ratio at Stanford University is 6:1, and it utilizes a quarter-based academic calendar.</p> <p>Stanford University accepts the Common Application. The school's tuition and fees are $68,544. Forty-nine percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $10,851.</p> <p>The four-year graduation rate is 56%. Six years after graduation, the median salary for graduates is $102,887.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#4",
+      "displayScore": "95",
+      "maxPossibleScore": null,
+      "sortRank": 4,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true,
+      "isPublic": true
+    }
+  },
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "1426"
+    ],
+    "institution": {
+      "footnote": null,
+      "isPublic": true,
+      "primaryKey": "1426",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "Yale University",
+      "sortName": "yaleuniversity",
+      "urlName": "yale-university",
+      "aliasNames": null,
+      "state": "CT",
+      "city": "New Haven",
+      "zip": "06520",
+      "region": null,
+      "xwalkId": "130794",
+      "metroId": "35300",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#4",
+      "rankingDisplayScore": "95",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 4,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": true,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/yale-university-1426\">Yale University</a></strong>",
+      "location": "New Haven, CT",
+      "rankingFullDisplayText": "#4 in National Universities",
+      "heroImage": null,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/0f297a9/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F8f%2Ff7526019804e07ae828f06b89df8c0%2Fcollege-photo_8737.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/931b37e/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F8f%2Ff7526019804e07ae828f06b89df8c0%2Fcollege-photo_8737.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/ee109e5/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F8f%2Ff7526019804e07ae828f06b89df8c0%2Fcollege-photo_8737.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/2bdb282/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F8f%2Ff7526019804e07ae828f06b89df8c0%2Fcollege-photo_8737.jpg",
+      "photoCount": 1,
+      "premiumSchool": false
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#4",
+      "displayScore": "95",
+      "maxPossibleScore": null,
+      "sortRank": 4,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 69900,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$69,900",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 6814,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "6,814",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 18629.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$18,629",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 49,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "49%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 4,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "4%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": null,
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1470,
+        "fieldName": "satCompSearch",
+        "displayValue": "1470-1570",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 33,
+        "fieldName": "actScoreSearch",
+        "displayValue": "33-35",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": "3.5",
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "3.5",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "4.2",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "4.2",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": "4.6",
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "4.6",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "4.9",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "4.9",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1470-1570",
+            "name": "SAT"
+          },
+          {
+            "value": "33-35",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "130794",
+    "blurb": "<p>Yale University is a private institution that was founded in 1701. In the 2026 edition of Best Colleges, Yale University is ranked No. #4 in National Universities. It's also ranked No. #3 in Best Value Schools.</p> <p>It has a total undergraduate enrollment of 6,814 (fall 2024), and the campus size is 1,108 acres. The student-faculty ratio at Yale University is 5:1, and it utilizes a semester-based academic calendar.</p> <p>Yale University accepts the Common Application and has a test-flexible admissions policy. The school's tuition and fees are $69,900. Forty-nine percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $18,535.</p> <p>The four-year graduation rate is 58%. Six years after graduation, the median salary for graduates is $81,765.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#4",
+      "displayScore": "95",
+      "maxPossibleScore": null,
+      "sortRank": 4,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true,
+      "isPublic": true
+    }
+  },
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "1774"
+    ],
+    "institution": {
+      "footnote": null,
+      "isPublic": true,
+      "primaryKey": "1774",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "University of Chicago",
+      "sortName": "universityofchicago",
+      "urlName": "university-of-chicago",
+      "aliasNames": "UChicago",
+      "state": "IL",
+      "city": "Chicago",
+      "zip": "60637",
+      "region": null,
+      "xwalkId": "144050",
+      "metroId": "16980",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#6",
+      "rankingDisplayScore": "94",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 6,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": false,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/university-of-chicago-1774\">University of Chicago</a></strong>",
+      "location": "Chicago, IL",
+      "rankingFullDisplayText": "#6 in National Universities",
+      "heroImage": true,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/86fa4ef/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F31%2F87%2F34b6f34d48e88f1ef94d2ab510cb%2Funiv-chicago-hero-image.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/b92fd20/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F31%2F87%2F34b6f34d48e88f1ef94d2ab510cb%2Funiv-chicago-hero-image.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/cf4d1a8/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F31%2F87%2F34b6f34d48e88f1ef94d2ab510cb%2Funiv-chicago-hero-image.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/8ff121a/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F31%2F87%2F34b6f34d48e88f1ef94d2ab510cb%2Funiv-chicago-hero-image.jpg",
+      "photoCount": 17,
+      "premiumSchool": true
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#6",
+      "displayScore": "94",
+      "maxPossibleScore": null,
+      "sortRank": 6,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": false
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 73266,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$73,266",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 7519,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "7,519",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 20774.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$20,774",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "34%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 4,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "4%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": null,
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1510,
+        "fieldName": "satCompSearch",
+        "displayValue": "1510-1580",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "actScoreSearch",
+        "displayValue": "34-35",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "4.0",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "4.0",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": "4.3",
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "4.3",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "4.9",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "4.9",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1510-1580",
+            "name": "SAT"
+          },
+          {
+            "value": "34-35",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "144050",
+    "blurb": "<p>University of Chicago is a private institution that was founded in 1890. In the 2026 edition of Best Colleges, University of Chicago is ranked No. #6 in National Universities. It's also ranked No. #1 in Best Colleges for Veterans.</p> <p>It has a total undergraduate enrollment of 7,519 (fall 2024), and the campus size is 217 acres. The student-faculty ratio at University of Chicago is 5:1, and it utilizes a quarter-based academic calendar.</p> <p>University of Chicago accepts the Common Application and has a test-optional admissions policy. The school's tuition and fees are $73,266. Thirty-four percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $20,531.</p> <p>The four-year graduation rate is 87%. Six years after graduation, the median salary for graduates is $80,870.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#6",
+      "displayScore": "94",
+      "maxPossibleScore": null,
+      "sortRank": 6,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": false,
+      "isPublic": true
+    }
+  },
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "2920"
+    ],
+    "institution": {
+      "footnote": "Duke University is no longer admitting new students to its Bachelor of Science in Nursing program, which is expected to graduate its last cohort in spring 2026. They are transitioning their direct-entry, pre-licensure nursing program to a Master of Nursing Degree.",
+      "isPublic": true,
+      "primaryKey": "2920",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "Duke University",
+      "sortName": "dukeuniversity",
+      "urlName": "duke-university",
+      "aliasNames": null,
+      "state": "NC",
+      "city": "Durham",
+      "zip": "27708",
+      "region": null,
+      "xwalkId": "198419",
+      "metroId": "20500",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#7",
+      "rankingDisplayScore": "93",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 7,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": true,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/duke-university-2920\">Duke University</a></strong>",
+      "location": "Durham, NC",
+      "rankingFullDisplayText": "#7 in National Universities",
+      "heroImage": false,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/0a2606e/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F25%2F2d774e6ec10d6ad447ab9c8f3bbd63%2Fcollege-photo_35613.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/3282bb0/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F25%2F2d774e6ec10d6ad447ab9c8f3bbd63%2Fcollege-photo_35613.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/bd0fdbe/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F25%2F2d774e6ec10d6ad447ab9c8f3bbd63%2Fcollege-photo_35613.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/e0c233d/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F25%2F2d774e6ec10d6ad447ab9c8f3bbd63%2Fcollege-photo_35613.jpg",
+      "photoCount": 16,
+      "premiumSchool": true
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#7",
+      "displayScore": "93",
+      "maxPossibleScore": null,
+      "sortRank": 7,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 73172,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$73,172",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 6523,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "6,523",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 26337.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$26,337",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 41,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "41%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 6,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "6%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": null,
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1500,
+        "fieldName": "satCompSearch",
+        "displayValue": "1500-1570",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "actScoreSearch",
+        "displayValue": "34-35",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": "3.9",
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "3.9",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "4.1",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "4.1",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": "4.5",
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "4.5",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": "4.4",
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "4.4",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "4.5",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "4.5",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1500-1570",
+            "name": "SAT"
+          },
+          {
+            "value": "34-35",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "198419",
+    "blurb": "<p>Duke University is a private institution that was founded in 1838. In the 2026 edition of Best Colleges, Duke University is ranked No. #7 in National Universities. It's also ranked No. #6 in Lowest Acceptance Rates.</p> <p>It has a total undergraduate enrollment of 6,523 (fall 2024), and the campus size is 8,693 acres. The student-faculty ratio at Duke University is 5:1.</p> <p>Duke University has a test-optional admissions policy. The school's tuition and fees are $73,172. Forty-one percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $30,785.</p> <p>The four-year graduation rate is 87%. Six years after graduation, the median salary for graduates is $85,792.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#7",
+      "displayScore": "93",
+      "maxPossibleScore": null,
+      "sortRank": 7,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true,
+      "isPublic": true
+    }
+  },
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "2077"
+    ],
+    "institution": {
+      "footnote": null,
+      "isPublic": true,
+      "primaryKey": "2077",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "Johns Hopkins University",
+      "sortName": "johnshopkinsuniversity",
+      "urlName": "jhu",
+      "aliasNames": "JHU",
+      "state": "MD",
+      "city": "Baltimore",
+      "zip": "21218",
+      "region": null,
+      "xwalkId": "162928",
+      "metroId": "12580",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#7",
+      "rankingDisplayScore": "93",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 7,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": true,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/jhu-2077\">Johns Hopkins University</a></strong>",
+      "location": "Baltimore, MD",
+      "rankingFullDisplayText": "#7 in National Universities",
+      "heroImage": false,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/fcc4235/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F16%2Fd110e9e042d0e4bd05b155b1be212b%2Fcollege-photo_9422.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/b84aa03/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F16%2Fd110e9e042d0e4bd05b155b1be212b%2Fcollege-photo_9422.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/2373092/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F16%2Fd110e9e042d0e4bd05b155b1be212b%2Fcollege-photo_9422.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/0808ba5/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F16%2Fd110e9e042d0e4bd05b155b1be212b%2Fcollege-photo_9422.jpg",
+      "photoCount": 25,
+      "premiumSchool": false
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#7",
+      "displayScore": "93",
+      "maxPossibleScore": null,
+      "sortRank": 7,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 67170,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$67,170",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 6356,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "6,356",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 25575.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$25,575",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 52,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "52%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 6,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "6%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": 3.9,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "3.9",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1520,
+        "fieldName": "satCompSearch",
+        "displayValue": "1520-1570",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "actScoreSearch",
+        "displayValue": "34-36",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": "4.1",
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "4.1",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "4.2",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "4.2",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": "4.5",
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "4.5",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "4.1",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "4.1",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1520-1570",
+            "name": "SAT"
+          },
+          {
+            "value": "34-36",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "162928",
+    "blurb": "<p>Johns Hopkins University is a private institution that was founded in 1876. In the 2026 edition of Best Colleges, Johns Hopkins University is ranked No. #7 in National Universities. It's also ranked No. #6 in Lowest Acceptance Rates.</p> <p>It has a total undergraduate enrollment of 6,356 (fall 2024), its setting is urban, and the campus size is 140 acres. The student-faculty ratio at Johns Hopkins University is 6:1, and it utilizes a 4-1-4-based academic calendar.</p> <p>Johns Hopkins University accepts the Common Application. The school's tuition and fees are $67,170. Fifty-two percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $20,820.</p> <p>The four-year graduation rate is 87%. Six years after graduation, the median salary for graduates is $86,306.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#7",
+      "displayScore": "93",
+      "maxPossibleScore": null,
+      "sortRank": 7,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true,
+      "isPublic": true
+    }
+  },
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "1739"
+    ],
+    "institution": {
+      "footnote": null,
+      "isPublic": true,
+      "primaryKey": "1739",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "Northwestern University",
+      "sortName": "northwesternuniversity",
+      "urlName": "northwestern-university",
+      "aliasNames": null,
+      "state": "IL",
+      "city": "Evanston",
+      "zip": "60208",
+      "region": null,
+      "xwalkId": "147767",
+      "metroId": "16980",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#7",
+      "rankingDisplayScore": "93",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 7,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": true,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/northwestern-university-1739\">Northwestern University</a></strong>",
+      "location": "Evanston, IL",
+      "rankingFullDisplayText": "#7 in National Universities",
+      "heroImage": false,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/432a39e/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fe3%2Fa8e6faf36f4bc5e57a814a6b99abce%2FNorthwestern-Hero1.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/1d8c7af/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fe3%2Fa8e6faf36f4bc5e57a814a6b99abce%2FNorthwestern-Hero1.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/ddc3b6d/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fe3%2Fa8e6faf36f4bc5e57a814a6b99abce%2FNorthwestern-Hero1.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/d6bc2a2/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fe3%2Fa8e6faf36f4bc5e57a814a6b99abce%2FNorthwestern-Hero1.jpg",
+      "photoCount": 14,
+      "premiumSchool": false
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#7",
+      "displayScore": "93",
+      "maxPossibleScore": null,
+      "sortRank": 7,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 70589,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$70,589",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 9060,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "9,060",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 29055.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$29,055",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 42,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "42%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 8,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "8%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": null,
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1510,
+        "fieldName": "satCompSearch",
+        "displayValue": "1510-1570",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "actScoreSearch",
+        "displayValue": "34-35",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": "3.9",
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "3.9",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "3.9",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "3.9",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": null,
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "N/A",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": "4.4",
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "4.4",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "4.8",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "4.8",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1510-1570",
+            "name": "SAT"
+          },
+          {
+            "value": "34-35",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "147767",
+    "blurb": "<p>Northwestern University is a private institution that was founded in 1851. In the 2026 edition of Best Colleges, Northwestern University is ranked No. #7 in National Universities.</p> <p>It has a total undergraduate enrollment of 9,060 (fall 2024), and the campus size is 231 acres. The student-faculty ratio at Northwestern University is 6:1.</p> <p>Northwestern University accepts the Common Application and has a test-optional admissions policy. The school's tuition and fees are $70,589. Forty-three percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $25,057.</p> <p>The four-year graduation rate is 83%. Six years after graduation, the median salary for graduates is $76,844.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#7",
+      "displayScore": "93",
+      "maxPossibleScore": null,
+      "sortRank": 7,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true,
+      "isPublic": true
+    }
+  },
+  {
+    "primaryKey": [
+      "national-universities",
+      "overall",
+      "3378"
+    ],
+    "institution": {
+      "footnote": null,
+      "isPublic": true,
+      "primaryKey": "3378",
+      "schoolType": "national-universities",
+      "ranking": "overall",
+      "rankingType": "national-universities",
+      "displayName": "University of Pennsylvania",
+      "sortName": "universityofpennsylvania",
+      "urlName": "university-of-pennsylvania",
+      "aliasNames": "UPenn",
+      "state": "PA",
+      "city": "Philadelphia",
+      "zip": "19104",
+      "region": null,
+      "xwalkId": "215062",
+      "metroId": "37980",
+      "institutionalControl": "private",
+      "rankingDisplayName": "National Universities",
+      "rankingDisplayRank": "#7",
+      "rankingDisplayScore": "93",
+      "rankingMaxPossibleScore": null,
+      "rankingSortRank": 7,
+      "rankingNoteText": null,
+      "rankingNoteCharacter": null,
+      "rankingRankStatus": "ranked",
+      "rankingIsTied": true,
+      "isPrimary": true,
+      "linkedDisplayName": "<strong><a class=\"black90\" href=\"/best-colleges/university-of-pennsylvania-3378\">University of Pennsylvania</a></strong>",
+      "location": "Philadelphia, PA",
+      "rankingFullDisplayText": "#7 in National Universities",
+      "heroImage": false,
+      "primaryPhotoCardSmall": "https://www.usnews.com/dims4/USNEWS/e10ff48/17177859217/thumbnail/196x196/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F7c%2F2357eaa9bde06e03bfb80c920320a0%2Fcollege-photo_27654.jpg",
+      "primaryPhotoMedium": "https://www.usnews.com/dims4/USNEWS/0c9d7fe/17177859217/thumbnail/336x336/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F7c%2F2357eaa9bde06e03bfb80c920320a0%2Fcollege-photo_27654.jpg",
+      "primaryPhotoCardLarge": "https://www.usnews.com/dims4/USNEWS/aa607e5/17177859217/thumbnail/420x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F7c%2F2357eaa9bde06e03bfb80c920320a0%2Fcollege-photo_27654.jpg",
+      "primaryPhotoThumb": "https://www.usnews.com/dims4/USNEWS/b0a0d47/17177859217/thumbnail/170x170/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F7c%2F2357eaa9bde06e03bfb80c920320a0%2Fcollege-photo_27654.jpg",
+      "photoCount": 9,
+      "premiumSchool": false
+    },
+    "overall": {
+      "displayName": "National Universities"
+    },
+    "parent": {
+      "displayName": "National Universities",
+      "displayRank": "#7",
+      "displayScore": "93",
+      "maxPossibleScore": null,
+      "sortRank": 7,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true
+    },
+    "searchData": {
+      "parentRank": {
+        "displayValue": null,
+        "rawValue": null,
+        "fieldName": "parentRank"
+      },
+      "tuition": {
+        "subText": null,
+        "dataQaId": "v_search_tuition",
+        "noteText": null,
+        "rawValue": 71236,
+        "fieldType": "searchTuition",
+        "anchorPage": null,
+        "displayValue": "$71,236",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null,
+        "fieldName": "searchTuition"
+      },
+      "enrollment": {
+        "dataQaId": "TOTAL_UNDERGRADS",
+        "noteText": null,
+        "rawValue": 10013,
+        "fieldName": "totalUndergrads",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": [
+          {
+            "value": "10,013",
+            "name": "(fall 2024)"
+          }
+        ],
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "costAfterAid": {
+        "dataQaId": "C_ALL_NET_COST",
+        "noteText": null,
+        "rawValue": 25315.0,
+        "fieldName": "cAllNetCost",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "$25,315",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "percentReceivingAid": {
+        "dataQaId": "C_PCT_NEED_BASED_AID",
+        "noteText": null,
+        "rawValue": 46,
+        "fieldName": "cPctNeedBasedAid",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "46%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "acceptanceRate": {
+        "dataQaId": "R_C_ACCEPT_RATE",
+        "noteText": null,
+        "rawValue": 5,
+        "fieldName": "rCAcceptRate",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "5%",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "hsGpaAvg": {
+        "dataQaId": "AVG_HS_GPA",
+        "noteText": null,
+        "rawValue": 3.9,
+        "fieldName": "avgHsGpa",
+        "fieldType": null,
+        "anchorPage": null,
+        "displayValue": "3.9",
+        "noteCharacter": null,
+        "anchorLocation": null,
+        "correctionTooltip": null
+      },
+      "satAvg": {
+        "dataQaId": "sat_comp_25",
+        "noteText": null,
+        "rawValue": 1510,
+        "fieldName": "satCompSearch",
+        "displayValue": "1510-1570",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "actAvg": {
+        "dataQaId": "act_score_25",
+        "noteText": null,
+        "rawValue": 34,
+        "fieldName": "actScoreSearch",
+        "displayValue": "34-36",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "engineeringRepScore": {
+        "dataQaId": "ENGINEERING_PROGRAM",
+        "noteText": null,
+        "rawValue": "3.8",
+        "fieldName": "engineeringProgram",
+        "fieldType": null,
+        "displayValue": "3.8",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "businessRepScore": {
+        "dataQaId": "BUSINESS_PROGRAM",
+        "noteText": null,
+        "rawValue": "4.7",
+        "fieldName": "businessProgram",
+        "fieldType": null,
+        "displayValue": "4.7",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "computerScienceRepScore": {
+        "dataQaId": "computer_science_program",
+        "noteText": null,
+        "rawValue": "4.2",
+        "fieldName": "computerScienceProgram",
+        "fieldType": null,
+        "displayValue": "4.2",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "nursingRepScore": {
+        "dataQaId": "nursing_program",
+        "noteText": null,
+        "rawValue": "4.4",
+        "fieldName": "nursingProgram",
+        "fieldType": null,
+        "displayValue": "4.4",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "psychologyRepScore": {
+        "dataQaId": "psychology_program",
+        "noteText": null,
+        "rawValue": "4.4",
+        "fieldName": "psychologyProgram",
+        "fieldType": null,
+        "displayValue": "4.4",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "economicsRepScore": {
+        "dataQaId": "economics_program",
+        "noteText": null,
+        "rawValue": "4.8",
+        "fieldName": "economicsProgram",
+        "fieldType": null,
+        "displayValue": "4.8",
+        "noteCharacter": null,
+        "correctionTooltip": null
+      },
+      "testAvgs": {
+        "displayValue": [
+          {
+            "value": "1510-1570",
+            "name": "SAT"
+          },
+          {
+            "value": "34-36",
+            "name": "ACT"
+          }
+        ]
+      }
+    },
+    "xwalkId": "215062",
+    "blurb": "<p>University of Pennsylvania is a private institution that was founded in 1740. In the 2026 edition of Best Colleges, University of Pennsylvania is ranked No. #7 in National Universities. It's also ranked No. #5 in Lowest Acceptance Rates.</p> <p>It has a total undergraduate enrollment of 10,013 (fall 2024), its setting is urban, and the campus size is 299 acres. The student-faculty ratio at University of Pennsylvania is 8:1, and it utilizes a semester-based academic calendar.</p> <p>The school's tuition and fees are $71,236. Forty-six percent of first-year students receive need-based financial aid, and the average net price for federal loan recipients is $26,138.</p> <p>The four-year graduation rate is 86%. Six years after graduation, the median salary for graduates is $90,555.</p>",
+    "ranking": {
+      "ranking": "overall",
+      "type": "national-universities",
+      "displayName": "National Universities",
+      "displayRank": "#7",
+      "displayScore": "93",
+      "maxPossibleScore": null,
+      "sortRank": 7,
+      "noteText": null,
+      "noteCharacter": null,
+      "rankStatus": "ranked",
+      "isTied": true,
+      "isPublic": true
+    }
+  }
+]

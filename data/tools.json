@@ -1,0 +1,24 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "crawl_website",
+      "description": "An autonomous, stealthy web crawler that deeply scans a website to extract its raw text. Bypasses standard bot protection and auto-scrolls to load dynamic content.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target_name": { "type": "string" },
+          "seed_urls": { "type": "array", "items": {"type": "string"} },
+          "allow_regex": { "type": "string" },
+          "deny_regex": { "type": "string" },
+          "max_pages": { "type": "integer" },
+          "scrolls": { 
+            "type": "integer", 
+            "description": "Number of times to scroll down to load dynamic/infinite-scroll content (default: 3). Increase for long lists like rankings." 
+          }
+        },
+        "required": ["target_name", "seed_urls", "allow_regex", "max_pages"]
+      }
+    }
+  }
+]
